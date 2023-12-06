@@ -1,0 +1,39 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "private": true,
+  "description": "前端表单Schema渲染",
+  "keywords": [],
+  "homepage": "https://github.com/xiazhiqiang/form#readme",
+  "bugs": {
+    "url": "https://github.com/xiazhiqiang/form/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiazhiqiang/form.git"
+  },
+  "license": "ISC",
+  "author": "Miles",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "yarn install --ignore-engines",
+    "build": "lerna run build --stream --sort",
+    "clean": "./cleanup.sh",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "husky": "^8.0.3",
+    "lerna": "^6.0.0"
+  }
+}
