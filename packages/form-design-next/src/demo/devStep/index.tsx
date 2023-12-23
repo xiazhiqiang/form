@@ -45,7 +45,7 @@ export default function Dev() {
           <CodeEditor
             mode="powershell"
             height="20px"
-            value={`tnpm i form-render-next -S`}
+            value={`tnpm i form-render-next2 -S`}
           />
           <p>工程需要安装react@^16、react-dom@^16、@alifd/next、moment。</p>
         </>

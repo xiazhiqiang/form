@@ -40,5 +40,8 @@
     "minimist": "^1.2.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
+  },
+  "repository": {
+    "url": "https://github.com/xiazhiqiang/form.git"
   }
 }

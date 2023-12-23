@@ -1,6 +1,6 @@
 {
-  "name": "form-render-next",
-  "version": "0.1.0",
+  "name": "form-render-next2",
+  "version": "0.1.1",
   "description": "基于Formily Next表单渲染",
   "license": "MIT",
   "main": "lib/index.js",
@@ -82,5 +82,8 @@
   },
   "authors": [
     "chengmu"
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/xiazhiqiang/form.git"
+  }
 }

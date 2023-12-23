@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { PageHeader, Drawer, Modal, Space, message } from 'antd';
-import SchemaFormRender from 'form-render-next';
+import SchemaFormRender from 'form-render-next2';
 import { createForm } from '@formily/core';
 import { FormButtonGroup, Reset, Submit } from '@formily/next';
 import { FormProvider } from '@formily/react';

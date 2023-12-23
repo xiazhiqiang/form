@@ -9,8 +9,8 @@
     "resolveJsonModule": true,
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "form-render-next": ["src"],
-      "form-render-next/*": ["src/*", "*"],
+      "form-render-next2": ["src"],
+      "form-render-next2/*": ["src/*", "*"],
       "@/*": ["src/*"]
     }
   },

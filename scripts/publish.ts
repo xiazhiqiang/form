@@ -1,11 +1,11 @@
-import { execSync, exec } from "child_process";
-import { join } from "path";
+import { ALI_NPM_REGISTRY } from "@appworks/constant";
+import { exec, execSync } from "child_process";
 import fse from "fs-extra";
-import minimist from "minimist";
+import { getVersions, isAliNpm } from "ice-npm-utils";
 import inquirer from "inquirer";
 import _get from "lodash/get";
-import { getVersions, isAliNpm, checkAliInternal } from "ice-npm-utils";
-import { ALI_NPM_REGISTRY } from "@appworks/constant";
+import minimist from "minimist";
+import { join } from "path";
 
 const argv = minimist(process.argv.slice(2));
 const rootDir = join(__dirname, "../");
@@ -90,12 +90,12 @@ async function publishPackage(packageDir) {
   // const npmTag = tag || (branchName === "master" ? "latest" : "beta");
 
   const isProdVersion = /^\d+\.\d+\.\d+$/.test(version);
-  if (branchName === "master" && !isProdVersion) {
+  if (["master", "main"].indexOf(branchName as string) >= 0 && !isProdVersion) {
     console.error(`禁止在 master 分支发布非正式版本：${name}@${version}`);
     return;
   }
 
-  if (branchName !== "master" && isProdVersion) {
+  if (["master", "main"].indexOf(branchName as string) < 0 && isProdVersion) {
     console.error(
       `当前 ${branchName} 分支非 master 分支，禁止发布正式版本：${name}@${version}`
     );

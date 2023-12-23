@@ -1,6 +1,6 @@
 {
   "name": "form-design-next",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "基于Formily Next的表单设计器",
   "license": "MIT",
   "main": "lib/index.js",
@@ -74,7 +74,7 @@
     "dumi": "^2.2.13",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
-    "form-render-next": "0.1.0",
+    "form-render-next2": "^0.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "lodash": "^4.17.21",
@@ -95,5 +95,8 @@
   },
   "authors": [
     "chengmu"
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/xiazhiqiang/form.git"
+  }
 }
