@@ -6,3 +6,4 @@ es
 lib
 build
 yarn.lock
+.dumi
